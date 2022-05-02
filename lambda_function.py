@@ -1,6 +1,6 @@
 import pandas
 import datetime
-def lambda_handler(event):
+def lambda_handler(event,lambda_context):
     now = datetime.datetime.now()
     print(now)
     year = lambda x: x.year
