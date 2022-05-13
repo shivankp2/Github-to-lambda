@@ -8,7 +8,7 @@ from datetime import datetime
 
 def lambda_handler(event, context):
     now = datetime.now()
-    response = requests.get(‘https://newsapi.org/v2/everything?q=tesla&from=2022-05-07&sortBy=publishedAt&apiKey=590a0141d1e44a268a21f6bb6c39d5ea′)
+    response = requests.get(‘https://newsapi.org/v2/everything?q=tesla&from=2022-04-13&sortBy=publishedAt&apiKey=590a0141d1e44a268a21f6bb6c39d5ea′)
 
     if response.status_code == 200:
         datadictionary = response.json()
